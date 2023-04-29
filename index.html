@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+h2,
+.subtitle {
+  margin: 0 0 1.5rem 0;
+}
+.header-group:has(h2):has(.subtitle) h2 {
+  margin: 0 0 0.2rem 0; /* reduce spacing on header, because subtitle will handle it */
+}
+
+</style>
+<body>
+
+  <div class="header-group">
+    <h2>Blog Post Title</h2> <!-- main spacing applied here -->
+    <div> <!-- main spacing applied here -->
+      This is a subtitle
+    </div>
+  </div>
+  
+  <br />
+  <br />
+  <br />
+
+  <div class="header-group">
+    <h2>Blog Post Title</h2>
+    <div class="subtitle"> <!-- main spacing applied here -->
+      This is a subtitle
+    </div>
+  </div>
+
+</body>
+</html>
